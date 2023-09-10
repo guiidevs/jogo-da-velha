@@ -27,6 +27,7 @@ function iniciar() {
 
 function configurar(){
     painel.style.display = "block";
+    div_mensagem.style.display = "none";
 }
 
 function travar() {
