@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha - Guilherme Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Jogo da Velha</h1>
+    </header>
+    <section class="container">
+        <div class="painel">
+            <div class="jogadores">
+                <fieldset>
+                    <legend>Quantos jogadores?</legend>
+                    <div>
+                        <input checked type="radio" name="jogadores" id="robo">
+                        <label for="robo">Contra Robo</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="jogadores" id="multiplayer">
+                        <label for="multiplayer">Multiplayer Offline</label>
+                    </div>
+
+                </fieldset>
+            </div>
+            <div class="nome">
+                <label >Seu nome</label>
+                <input type="text" placeholder="ex: Guilherme Developer" value="Guilherme" id="nome">
+                <button onclick="iniciar()">Jogar</button>
+            </div>
+        </div>
+        <div class="jogo">
+            <div class="bloco" data-i="0" id="1"></div>
+            <div class="bloco" data-i="1" id="2"></div>
+            <div class="bloco" data-i="2" id="3"></div>
+            <div class="bloco" data-i="3" id="4"></div>
+            <div class="bloco" data-i="4" id="5"></div>
+            <div class="bloco" data-i="5" id="6"></div>
+            <div class="bloco" data-i="6" id="7"></div>
+            <div class="bloco" data-i="7" id="8"></div>
+            <div class="bloco" data-i="8" id="9"></div>
+        </div>
+        <div class="mensagem">
+            <label>Você ganhou!</label>
+            <button onclick="iniciar()">Reiniciar</button>
+            <button onclick="configurar()">Configurar</button>
+        </div>
+    </section>
+    <footer class="rodape">
+        &copy;Todos os direitos reservados a Guilherme Developer.
+    </footer>
+</body>
+</html>

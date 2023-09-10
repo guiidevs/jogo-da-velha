@@ -1,0 +1,103 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: blueviolet;    
+}
+/*Cabeçalho*/
+header{
+    text-align: center;
+    margin: 30px 0;
+}
+/*Jogo*/
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 10px;
+}
+.painel{
+    margin: 0 20px;
+}
+.jogadores{
+    margin-bottom: 10px;
+}
+.jogadores fieldset{
+    display: flex;
+    gap: 30px;
+    text-indent: 10px;
+    padding: 10px;
+    justify-content: center;
+}
+#nome{
+    height: 20px;
+    padding: 5px 10px;
+}
+
+.nome button{
+    width: 100px;
+    height: 30px;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgb(51, 67, 97);
+    color: aliceblue;
+}
+
+.nome button:hover{
+    cursor: pointer;
+    background-color: cornflowerblue;
+}
+
+.jogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+}
+.bloco {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.bloco:hover{
+    cursor: pointer;
+    background-color: cornflowerblue;
+    color: white;
+}
+.mensagem{
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;
+}
+.mensagem label {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.mensagem button{
+    background-color: cadetblue;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    border-radius: 10px;
+    width: 300px;
+    height: 30px;
+    margin: 5px;
+}
+.mensagem button:hover{
+    cursor: pointer;
+}
+
+/*Footer*/
+footer{
+    text-align: center;
+    margin: 20px;
+}
